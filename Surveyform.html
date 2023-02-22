@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        span.a{
+            display:inline;
+        }
+        .textbox:hover{
+            border-color: rgb(162, 92, 227);
+        }
+        input{
+            height: 25px;
+        }
+    </style>
+</head>
+<body bgcolor="lightpink">
+    <center><h1 style="color:rgb(19, 6, 16)">Doctor Appointment Form</h1></center>
+    <div style="margin-left: 400px;" >
+    <form action="submit.html">
+
+        <div>
+        <label> Name </label> <br>
+        <span class="a"> <input type="text" class="textbox" required placeholder="Enter your first name" style="margin-left: 5px;"> </span>
+        <span class="a"> <input type="text" class="textbox" placeholder="Enter your last name" style="margin-left: 45px;"></span>
+        </div>
+
+        <div>
+        <span class="a" style="margin-left: 5px; font-size: small"> First Name  </span>
+        <span class="a" style="margin-left: 165px;font-size: small;" > Last Name </span>
+        </div>
+        <br>
+        
+        <div>
+        <span class="a"><label style="margin-right: 10px;"> Gender </label></span>
+        <span class="a"><label style="margin-left: 160px;"> Phone Number </label></span>
+        </div>
+
+        <div>
+        <select class="textbox" style="height: 30px; width: 170px; margin-left: 5px;">
+            <option>Please Select</option>
+            <option> Male</option>
+            <option> Female</option>
+            <option> Transgender</option>
+        </select>
+        <input type="text" class="textbox" required placeholder="Mobile number" style="width: 170px; margin-left: 40px;">
+        </div>
+        <br>
+
+
+        <div>
+            <label style="margin-right: 10px;"> Date of Birth </label>
+            <input type="date" class="textbox" style="width: 150px;"> <br>
+            </div>
+            <br>
+
+            <div>
+             <label>Address</label><br>
+             <input type="text" class="textbox" style="height: 70px; width: 390px;"><br>
+            </div>
+           <br>
+
+        <div>
+            <span class="a"><label style="margin-right: 10px;"> City </label></span>
+            <span class="a"><label style="margin-left: 180px;"> Postal/Zip Code </label></span>
+            </div>
+
+        <div>
+        <input type = "text" class="textbox" style="margin-left: 5px;">
+        <input type ="text" class="textbox" style="margin-left: 45px;"> 
+        </div>
+        <br>
+
+       <div>
+        <label> Preferred Appointment Date </label>
+        <input type="datetime-local" required class="textbox" style=" margin-left: 10px; height: 30px; width: 200px;">
+    </div>
+        <br>
+
+        <div>
+        <label>Have you ever applied to our facility before? </label><br>
+        <input type="radio"> <label> Yes </label>
+        <input type="radio">  <label> No </label>
+       </div>
+        <br>
+
+       <div>
+        <label> Which procedure do you want to make an appoinment for?</label><br>
+        <input type="checkbox"> <label>Doctor Check</label><br>
+        <input type="checkbox"> <label>Medical Examination</label><br>
+        <input type="checkbox"> <label>Result Analysis</label><br>
+        <input type="checkbox"> <label>Check-up</label><br>
+        </div>
+            <br>
+            <input type="submit" style="background-color: rgb(174, 157, 190); margin-left: 180px; width: 80px; height: 30px;">
+    </form>
+</div>
+</body>
+</html>
